@@ -31,7 +31,6 @@ end
 def play (songs)
 	puts "Please enter a song name or number:"
 	selection = gets.chomp
-	binding.pry
 	songs.each_with_index do |i,song|
   	if selection == song || selection == "#{i}"
   		puts "Playing #{songs[song_choice-1]}"
