@@ -32,7 +32,7 @@ def play (songs)
 	puts "Please enter a song name or number:"
 	selection = gets.chomp
 	songs.each_with_index do |song,i|
-  	if selection == song || selection == 1..songs.length
+  	if selection == song || selection == "1".."9"
   		puts "Playing #{songs[i]}"
   	else
   		puts "Invalid input, please try again"
