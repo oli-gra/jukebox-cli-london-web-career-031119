@@ -13,8 +13,8 @@ songs = [
 ]
 
 def list(songs)
-	songs.each_with_index(1) do |i,song|
-		puts "#{i}. #{song}"
+	songs.each_with_index do |i,song|
+		puts "#{i+1}. #{song}"
 	end
 end
 
